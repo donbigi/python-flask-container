@@ -23,6 +23,8 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and Push
+        env:
+          DOCKER_IMAGE: donbigi/flask-app:latest
         run: |
-          docker build -t donbigi/flask-app:latest .
-          docker push your-registry
+          docker build -t $DOCKER_IMAGE .
+          docker push $DOCKER_IMAGE
