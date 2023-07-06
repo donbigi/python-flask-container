@@ -36,12 +36,14 @@ The Flask application will be accessible at `http://localhost:8080` in your web 
 
 ## Continuous Integration (CI)
 
-This repository includes a CI workflow set up with GitHub Actions. The CI workflow performs the following tasks:
+This repository also includes a CI workflow set up with GitHub Actions. The CI workflow performs the following tasks:
 
 - Builds the Docker image.
 - Pushes the Docker image to a Docker registry.
 
-The workflow is triggered on push to the `main` branch and also runs every Saturday at 7 PM. To configure the CI workflow for your own project, make sure you have the following secrets set in your GitHub repository:
+The workflow is triggered on push to the `main` branch and also runs every Saturday at 7 PM. set the cron using: [Cron Expression Generator](https://www.atatus.com/tools/cron)
+
+To configure the CI workflow for your own project, make sure you have the following secrets set in your GitHub repository:
 
 - `DOCKER_USERNAME`: Your Docker registry username.
 - `DOCKER_PASSWORD`: Your Docker registry password.
