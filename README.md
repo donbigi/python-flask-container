@@ -32,7 +32,7 @@ To run the Docker container, execute the following command:
 docker run -p 8080:5000 flask-app
 ```
 
-The Flask application will be accessible at `http://localhost:8080` in your web browser.
+The Flask application is accessible at `http://localhost:8080` in your web browser.
 
 ## Continuous Integration (CI)
 
