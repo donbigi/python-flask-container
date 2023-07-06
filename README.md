@@ -49,3 +49,5 @@ To configure the CI workflow for your own project, make sure you have the follow
 - `DOCKER_PASSWORD`: Your Docker registry password.
 
 You can modify the workflow configuration in the `.github/workflows/build.yml` file to suit your needs.
+
+Enjoy
