@@ -26,6 +26,5 @@ jobs:
         env:
           DOCKER_IMAGE: donbigi/flask-app:latest
         run: |
-          echo "DOCKER_IMAGE=${DOCKER_IMAGE}" >> $GITHUB_ENV
           docker build -t $DOCKER_IMAGE .
           docker push $DOCKER_IMAGE
